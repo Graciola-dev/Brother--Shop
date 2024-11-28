@@ -1,0 +1,306 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  border: double black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f0efee;
+  color: black;
+}
+
+.header-container {
+  text-align: center;
+  width: 100%;
+}
+
+.logo {
+  align-items: center;
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: white;
+  border: 2px solid #333;
+  color: #333;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 0.5rem;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+}
+
+.menu a {
+  position: absolute;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  position: absolute;
+  color: gray;
+}
+
+.hamburger:hover + .menu,
+.menu:hover {
+  display: flex;
+  position: absolute;
+  top: 4rem;
+  left: 1rem;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Carrinho */
+.cart-container {
+  align-items: end;
+  position: relative;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.cart-link:hover {
+  color: gray;
+}
+.cart-icon {
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  margin-left: 1rem; /* Distância entre os outros botões */
+  transition: color 0.3s;
+}
+
+.cart-icon:hover {
+  color: rgb(161, 161, 161); /* Muda a cor quando o mouse passar por cima */
+}
+
+/* Produtos */
+.products-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.products-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product {
+  display: inline-block;
+  width: 30%;
+  margin: 15px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.product-image {
+  background-color: #f0efee;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.map,
+.map-image {
+  width: 400px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+}
+
+footer img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: white;
+}
+/* Estilos do footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #fff;
+}
+
+/* Estilo para o container do footer */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para o texto do footer */
+footer p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.social-icon {
+  margin-top: 10px;
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #e4405f; /* Cor característica do Instagram */
+}
+.banner {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 78rem;
+}
+
+.video-container video {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner-content {
+  position: relative; /* Garante que o conteúdo ficará acima do vídeo */
+  z-index: 1; /* Garantir que o conteúdo seja exibido sobre o vídeo */
+  padding: 25rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product {
+    width: 45%;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: none; /* Mantém oculto por padrão no mobile */
+  }
+
+  .hamburger:hover + .menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .search-input {
+    border-radius: 5px 5px 0 0;
+    border-right: 2px solid #333;
+  }
+
+  .search-button {
+    border-radius: 0 0 5px 5px;
+    border-left: none;
+  }
+}
